@@ -33,4 +33,5 @@ steps:
       - 'chart/values.yaml'
       - '--set'
       - 'image.tag=$COMMIT_SHA'
+      - 'chart'
       
