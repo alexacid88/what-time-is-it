@@ -10,8 +10,7 @@ steps:
   - id: 'push-image'
     name: gcr.io/cloud_builders/docker
     args:
-      - build
-      - -t
+      - push
       - gcr.io/$PROJECT_ID/what-time-is-it:$COMMIT_SHA
 
   - id: 'setup-kubectl'
