@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: what-time-is-it
+  repository: gcr.io/bux-assignment-jleon/what-time-is-it
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -46,13 +46,13 @@ ingress:
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "false"
   hosts:
-    - host: assignment.local.buxdevsecops.io
+    - host: jleon.asg11.casual-trading.com
       paths:
         - path: /
   tls:
     - secretName: what-time-is-it-tls
       hosts:
-        - assignment.local.buxdevsecops.io
+        - jleon.asg11.casual-trading.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

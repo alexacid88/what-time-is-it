@@ -13,3 +13,25 @@ steps:
       - build
       - -t
       - gcr.io/$PROJECT_ID/what-time-is-it:$COMMIT_SHA
+
+  - id: 'setup-kubectl'
+    name: gcr.io/cloud-builders/kubectl
+    args:
+      - cluster-info
+    env:
+      - CLOUDSDK_COMPUTE_REGION=us-east1
+      - CLOUDSDK_CONTAINER_CLUSTER=bux-assignment-jleon-gke
+
+  - id: 'deploy-chart'
+    name: 'alpine/helm:3.5.3'
+    args:
+      - 'upgrade'
+      - 'what-time-is-it'
+      - '-i'
+      - '--namespace'
+      - 'default'
+      - '-f'
+      - 'chart/values.yaml'
+      - '--set'
+      - 'image.tag=$COMMIT_SHA'
+      
