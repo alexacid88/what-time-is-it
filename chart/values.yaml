@@ -5,8 +5,8 @@
 replicaCount: 2
 
 image:
-  repository: gcr.io/bux-assignment-jleon/assignment-repo/what-time-is-it
-  pullPolicy: IfNotPresent
+  repository: us.gcr.io/bux-assignment-jleon/what-time-is-it
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
