@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: gcr.io/bux-assignment-jleon/what-time-is-it
+  repository: gcr.io/bux-assignment-jleon/assignment-repo/what-time-is-it
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -15,7 +15,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account should be created
+  # Specifies whether a service account.pkg.devshould be created
   create: true
   # Annotations to add to the service account
   annotations: {}
@@ -70,4 +70,4 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}
+affinity: {}GKE Deployment Error response from daemon: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials.
