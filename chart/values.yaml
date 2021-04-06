@@ -15,7 +15,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account.pkg.devshould be created
+  # Specifies whether a service account should be created
   create: true
   # Annotations to add to the service account
   annotations: {}
@@ -70,4 +70,4 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}GKE Deployment Error response from daemon: unauthorized: You don't have the needed permissions to perform this operation, and you may have invalid credentials.
+affinity: {}
