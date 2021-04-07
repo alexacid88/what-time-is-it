@@ -13,7 +13,6 @@ spec:
       version: '>=0.0.1'
       sourceRef:
         kind: GitRepository
-        name: podinfo
-        namespace: flux-system
+        name: flux-system
   values:
     replicaCount: 2
