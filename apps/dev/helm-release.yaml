@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: what-time-is-it
-  namespace: time
+  namespace: default
 spec:
   interval: 5m
   upgrade: 
@@ -13,7 +13,7 @@ spec:
       version: '>=0.0.1'
       sourceRef:
         kind: GitRepository
-        name: flux-system
+        name: what-time-is-it
         namespace: flux-system
   values:
     replicaCount: 2
