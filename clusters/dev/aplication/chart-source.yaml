@@ -4,7 +4,7 @@ metadata:
   name: what-time-is-it
   namespace: flux-system
 spec:
-  interval: 10m
+  interval: 1m
   url: https://github.com/alexacid88/what-time-is-it
   ref:
     branch: master
