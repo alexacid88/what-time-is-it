@@ -22,7 +22,7 @@ steps:
       - CLOUDSDK_CONTAINER_CLUSTER=bux-assignment-jleon-gke
 
   - id: 'deploy-chart'
-    name: 'alpine/helm:3.1.3'
+    name: 'alpine/helm:3.5.3'
     args:
       - 'upgrade'
       - 'what-time-is-it'

@@ -6,7 +6,8 @@ metadata:
 spec:
   interval: 5m
   upgrade: 
-    force: true
+    preserveValues: true
+    cleanupOnFail: true
   chart:
     spec:
       chart: ./chart
