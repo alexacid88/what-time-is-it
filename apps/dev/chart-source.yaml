@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: podinfo
-  namespace: flux-system
+  namespace: podinfo
 spec:
   interval: 1m
   url: ssh://git@github.com/alexacid88/what-time-is-it
