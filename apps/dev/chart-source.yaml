@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: what-time-is-it
-  namespace: default
+  name: podinfo
+  namespace: flus-system
 spec:
   interval: 1m
   url: https://github.com/alexacid88/what-time-is-it
