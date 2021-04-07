@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/alexacid88/what-time-is-it
+  url: ssh://git@github.com/alexacid88/what-time-is-it
   ref:
     branch: master
   ignore: |
