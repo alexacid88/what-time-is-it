@@ -5,7 +5,7 @@ metadata:
   namespace: time
 spec:
   interval: 1m
-  url: ssh://git@github.com/alexacid88/what-time-is-it
+  url: https://github.com/alexacid88/bux-assignment.git
   ref:
     branch: master
   ignore: |
