@@ -5,9 +5,13 @@ metadata:
   namespace: time
 spec:
   interval: 1m
-  url: https://github.com/alexacid88/bux-assignment.git
+  url: ssh://git@github.com/alexacid88/what-time-is-it
   ref:
     branch: master
+  secretRef:
+    name: flux-system
   ignore: |
+    # exclude all
+    /*
     # include charts directory
     !/chart
