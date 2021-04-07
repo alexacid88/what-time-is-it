@@ -9,7 +9,5 @@ spec:
   ref:
     branch: master
   ignore: |
-    # exclude all
-    /*
     # include charts directory
     !/chart
