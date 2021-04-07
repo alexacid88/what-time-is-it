@@ -13,7 +13,7 @@ spec:
       version: '>=0.0.1'
       sourceRef:
         kind: GitRepository
-        name: what-time-is-it
+        name: flux-system
         namespace: flux-system
   values:
     replicaCount: 2
